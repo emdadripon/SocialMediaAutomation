@@ -11,9 +11,10 @@
     <parameter name="browserVersion" value="53.0"/>
     <parameter name="url" value="https://www.facebook.com/"/>
 
-    <test name = "Amazon Home">
+    <test name = "FaceBook Test">
         <classes>
-           <class name="Post.post"/>
+            <class name="AcceptFriendRequest.acceptFriendRequest"/>
+
         </classes>
     </test>
 

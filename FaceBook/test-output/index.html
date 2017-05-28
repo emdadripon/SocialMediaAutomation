@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-FaceBook">
-              <span class="suite-name border-failed">FaceBook</span>
+              <span class="suite-name border-passed">FaceBook</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-FaceBook" class="hide-methods failed suite-FaceBook"> (hide)</a> <!-- hide-methods failed suite-FaceBook -->
-                      <a href="#" panel-name="suite-FaceBook" class="show-methods failed suite-FaceBook"> (show)</a> <!-- show-methods failed suite-FaceBook -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FaceBook" class="hide-methods passed suite-FaceBook"> (hide)</a> <!-- hide-methods passed suite-FaceBook -->
+                      <a href="#" panel-name="suite-FaceBook" class="show-methods passed suite-FaceBook"> (show)</a> <!-- show-methods passed suite-FaceBook -->
                     </span>
-                    <div class="method-list-content failed suite-FaceBook">
+                    <div class="method-list-content passed suite-FaceBook">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FaceBook" title="Post.post" hash-for-method="post">post</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FaceBook" title="AcceptFriendRequest.acceptFriendRequest" hash-for-method="confirmRequest">confirmRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-FaceBook -->
+                    </div> <!-- method-list-content passed suite-FaceBook -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,50 +117,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-FaceBook" class="panel FaceBook">
-          <div class="suite-FaceBook-class-failed">
+          <div class="suite-FaceBook-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Post.post</span>
+              <img src="passed.png"/>
+              <span class="class-name">AcceptFriendRequest.acceptFriendRequest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="post">
-                  </a> <!-- post -->
-                  <span class="method-name">post</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: ._1mf._1mj
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;sms-MacBook-Air.home&apos;, ip: &apos;fe80:0:0:0:185d:8bf0:5259:b61c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/var/folders/3l/h08n64s53j55r5bw7_2_pcrw0000gn/T/rust_mozprofile.5Nz6tGy7GNXx, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=53.0.3, platformVersion=16.5.0, moz:processID=6417.0, browserName=firefox, javascriptEnabled=true, platformName=darwin}]
-Session ID: 359bd8cf-41ef-9148-a9ab-4664a0737cfc
-*** Element info: {Using=css selector, value=._1mf._1mj}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-	at creatPostToFaceBook.CreatPostToFaceBook.writeToPost(CreatPostToFaceBook.java:22)
-	at Post.post.post(post.java:22)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
+                  <a name="confirmRequest">
+                  </a> <!-- confirmRequest -->
+                  <span class="method-name">confirmRequest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FaceBook-class-failed -->
+          </div> <!-- suite-FaceBook-class-passed -->
         </div> <!-- panel FaceBook -->
         <div panel-name="test-xml-FaceBook" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -178,11 +149,11 @@ Session ID: 359bd8cf-41ef-9148-a9ab-4664a0737cfc
   &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
   &lt;parameter name=&quot;cloudEnvName&quot; value=&quot;browserstack&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.facebook.com/&quot;/&gt;
-  &lt;test name=&quot;Amazon Home&quot;&gt;
+  &lt;test name=&quot;FaceBook Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Post.post&quot;/&gt;
+      &lt;class name=&quot;AcceptFriendRequest.acceptFriendRequest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Amazon Home --&gt;
+  &lt;/test&gt; &lt;!-- FaceBook Test --&gt;
 &lt;/suite&gt; &lt;!-- FaceBook --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,7 +165,7 @@ Session ID: 359bd8cf-41ef-9148-a9ab-4664a0737cfc
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Amazon Home (1 class)</span>
+                <span class="test-name">FaceBook Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,14 +193,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'post')
-data.setCell(0, 2, 'Post.post')
-data.setCell(0, 3, 20875);
+data.setCell(0, 1, 'confirmRequest')
+data.setCell(0, 2, 'AcceptFriendRequest.acceptFriendRequest')
+data.setCell(0, 3, 33387);
 window.suiteTableData['FaceBook']= { tableData: data, tableDiv: 'times-div-FaceBook'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-FaceBook">
               </div> <!-- times-div-FaceBook -->
             </div> <!-- times-div -->
@@ -241,9 +212,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">post</span>
+              <span class="reporter-method-name">confirmRequest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Epic: Metro EC:1,2 <a https://peoplentch.atlassian.net/browse/GREEN-8> GREEN-8 </a></span>
+                <span class="reporter-method-output"></span>
                 <span class="reporter-method-output">Launch local browser Instance</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -262,36 +233,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Post.post</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">AcceptFriendRequest.acceptFriendRequest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">extentSetup(org.testng.TestRunner@3d8314f0)</span>
+                <span class="method-name">extentSetup(org.testng.TestRunner@3439f68d)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, OS X, Sierra, firefox, 53.0, https://www.facebook.com/)</span>
-                <span class="method-start">750 ms</span>
+                <span class="method-start">889 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startExtent(public void Post.post.post() throws java.lang.InterruptedException)</span>
-                <span class="method-start">7592 ms</span>
+                <span class="method-name">startExtent(public void AcceptFriendRequest.acceptFriendRequest.confirmRequest())</span>
+                <span class="method-start">8377 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">post</span>
-                <span class="method-start">7606 ms</span>
+                <span class="method-name">confirmRequest</span>
+                <span class="method-start">8395 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=post status=FAILURE method=post.post()[pri:0, instance:Post.post@1a407d53] output=E...)</span>
-                <span class="method-start">28497 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=confirmRequest status=SUCCESS method=acceptFriendRequest.confirmRequest()[pri:0, in...)</span>
+                <span class="method-start">41783 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">29383 ms</span>
+                <span class="method-start">42632 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateReport</span>
-                <span class="method-start">29419 ms</span>
+                <span class="method-start">42660 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
